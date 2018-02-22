@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "chaos.cpu-burner.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether the CPU burner job should start."
+    },
+    {
+      "name": "chaos.cpu-burner.step",
+      "type": "java.lang.Double",
+      "description": "A decimal value between 0.0 and 1.0 that defines the increased load at each iteration."
+    },
+    {
+      "name": "chaos.cpu-burner.duration",
+      "type": "java.lang.Long",
+      "description": "The duration (in ms) between each iteration (i.e. how much time the load is maintained at every cycle."
+    },
+    {
+      "name": "chaos.pid-burner.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether the PID burner job should start."
+    },
+    {
+      "name": "chaos.pid-burner.max-threads",
+      "type": "java.lang.Integer",
+      "description": "The number of threads to eventually spawn."
+    },
+    {
+      "name": "chaos.pid-burner.duration",
+      "type": "java.lang.Long",
+      "description": "The duration (in ms) between each thread spawn."
+    },
+    {
+      "name": "chaos.ram-burner.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether the RAM burner job should start."
+    },
+    {
+      "name": "chaos.ram-burner.max-memory",
+      "type": "java.lang.Integer",
+      "description": "The maount of memory to eventually load."
+    },
+    {
+      "name": "chaos.ram-burner.duration",
+      "type": "java.lang.Long",
+      "description": "The duration (in ms) between each new memory load."
+    }
+  ]
+}
