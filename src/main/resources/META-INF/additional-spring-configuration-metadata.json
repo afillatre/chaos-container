@@ -16,6 +16,26 @@
       "description": "The duration (in ms) between each iteration (i.e. how much time the load is maintained at every cycle."
     },
     {
+      "name": "chaos.fio-burner.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether the Fio burner job should start."
+    },
+    {
+      "name": "chaos.fio-burner.max-files",
+      "type": "java.lang.Integer",
+      "description": "The number of files we'll eventually create."
+    },
+    {
+      "name": "chaos.fio-burner.file-size",
+      "type": "java.lang.Integer",
+      "description": "The size (in MB) for each file to create."
+    },
+    {
+      "name": "chaos.fio-burner.throughput",
+      "type": "java.lang.Integer",
+      "description": "The amount of data (in MB/s) we write in the files each second. This is limited by the host capability."
+    },
+    {
       "name": "chaos.pid-burner.enabled",
       "type": "java.lang.Boolean",
       "description": "Whether the PID burner job should start."
