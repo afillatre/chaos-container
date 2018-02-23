@@ -15,7 +15,7 @@ import javax.annotation.PostConstruct
 @EnableConfigurationProperties(PidBurnerSettings::class)
 class PidBurner(val settings: PidBurnerSettings) : NutJob {
 
-    private val log = LoggerFactory.getLogger(RamBurner::class.java)
+    private val log = LoggerFactory.getLogger(PidBurner::class.java)
 
     @PostConstruct
     fun postConstruct() {
