@@ -10,10 +10,15 @@ This container can be configured to misbehave :
  * etc.
  
 ## Build
-In order to build the container, launch an `mvn package` command. This will create a jar,
-alongside with a docker image. By default, the docker image prefix will be your username,
-but you can override it by giving the Maven command the following property: 
-`-Ddocker.image.prefix=<a_prefix>`
+In order to build the container, launch an `mvn clean package` command. This will create a jar,
+alongside with a docker image. You can configure some things during the image creation (by
+passing parameters with the`-D` option):
+* `-Ddocker.image.base=<base_image_name`: the base image to build your own image from. Should
+be at least a Java runtime 8+ (alpine and slim versions seem to work as well)
+* `-Ddocker.image.name=<final_image_name`: the name you want for your image. By default, it's
+the artifact's name
+* `-Ddocker.image.prefix=<a_prefix>`: the image prefix - useful if you want to push it in
+a custom registry. By default, it's your env username
 
 ## Run
 Run the image with the following command: `docker run [--rm] <my_image>`.

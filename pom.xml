@@ -24,6 +24,7 @@
         <java.version>1.8</java.version>
         <kotlin.version>1.2.21</kotlin.version>
         <docker.image.base>openjdk:8-jre-alpine</docker.image.base>
+        <docker.image.name>${project.artifactId}</docker.image.name>
         <docker.image.prefix>${env.USER}</docker.image.prefix>
     </properties>
 
@@ -127,7 +128,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
+                    <repository>${docker.image.prefix}/${docker.image.name}</repository>
                     <buildArgs>
                         <BASE_IMAGE>${docker.image.base}</BASE_IMAGE>
                         <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
