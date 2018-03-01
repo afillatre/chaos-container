@@ -36,6 +36,21 @@
       "description": "The amount of data (in MB/s) we write in the files each second. This is limited by the host capability."
     },
     {
+      "name": "chaos.log-burner.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether the Log burner job should start."
+    },
+    {
+      "name": "chaos.log-burner.max-logs",
+      "type": "java.lang.Integer",
+      "description": "The number of logs (* 1000) to eventually fire."
+    },
+    {
+      "name": "chaos.log-burner.logs-per-sec",
+      "type": "java.lang.Integer",
+      "description": "The number of logs to fire per second."
+    },
+    {
       "name": "chaos.pid-burner.enabled",
       "type": "java.lang.Boolean",
       "description": "Whether the PID burner job should start."

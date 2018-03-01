@@ -8,6 +8,10 @@ chaos:
     max-files: 1
     file-size: 1000
     throughput: 100
+  log-burner:
+    enabled: false
+    max-logs: 10
+    logs-per-sec: 100
   pid-burner:
     enabled: false
     max-threads: 200
