@@ -1,4 +1,4 @@
-package fr.fillatre.testing.chaoscontainer.nutjobs.pidburner
+package fr.fillatre.testing.chaoscontainer.nutjobs.ramburner
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 

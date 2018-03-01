@@ -1,4 +1,4 @@
-package fr.fillatre.testing.chaoscontainer.nutjobs.pidburner
+package fr.fillatre.testing.chaoscontainer.nutjobs.ramburner
 
 import fr.fillatre.testing.chaoscontainer.nutjobs.NutJob
 import org.slf4j.LoggerFactory
